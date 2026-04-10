@@ -44552,6 +44552,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-header .u-nav-1 {
   font-weight: 400;
   font-size: 1.25rem;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-2 {
@@ -44567,10 +44568,6 @@ a.u-link.u-text-hover-grey-90:hover {
     width: auto;
     margin-top: -72px;
     margin-right: 3px;
-  }
-
-  .u-header .u-nav-1 {
-    letter-spacing: normal;
   }
 }
 
@@ -44592,7 +44589,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
  .u-footer {
-  min-height: 304px;
+  min-height: 508px;
 }
 
 .u-footer .u-sheet-1 {
@@ -44605,7 +44602,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-layout-cell-1 {
-  min-height: 298px;
+  min-height: 331px;
 }
 
 .u-footer .u-container-layout-1 {
@@ -44625,7 +44622,7 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-layout-cell-2 {
-  min-height: 298px;
+  min-height: 331px;
 }
 
 .u-footer .u-container-layout-2 {
@@ -44658,12 +44655,18 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-container-layout-4 {
-  padding: 24px 30px 20px;
+  padding: 0;
 }
 
 .u-footer .u-position-3 {
   width: 203px;
-  margin: 1px 0 0;
+  margin: 25px 30px 0;
+}
+
+.u-footer .u-custom-html-1 {
+  min-height: 126px;
+  height: auto;
+  margin: 13px 5px -34px -110px;
 }
 
 .u-footer .u-text-7 {
@@ -44676,12 +44679,12 @@ a.u-link.u-text-hover-grey-90:hover {
   padding: 0;
 }
 @media (max-width: 1199px) {
-  .u-footer .u-sheet-1 {
-    min-height: 371px;
+   .u-footer {
+    min-height: 304px;
   }
 
-  .u-footer .u-layout-wrap-1 {
-    margin-top: 10px;
+  .u-footer .u-sheet-1 {
+    min-height: 371px;
   }
 
   .u-footer .u-layout-cell-1 {
@@ -44725,12 +44728,12 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-position-2 {
     min-height: 230px;
-    margin-right: initial;
-    margin-left: initial;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   .u-footer .u-layout-cell-4 {
-    min-height: 309px;
+    min-height: 273px;
   }
 
   .u-footer .u-container-layout-4 {
@@ -44739,17 +44742,19 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-position-3 {
-    height: auto;
-    min-height: 203px;
+    width: 203px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+
+  .u-footer .u-custom-html-1 {
     margin-right: 0;
-    margin-left: 16px;
-    width: 157px;
+    margin-left: 0;
   }
 
   .u-footer .u-text-7 {
     width: 632px;
-    margin-top: 21px;
-    margin-bottom: 32px;
+    margin-top: 0;
   }
 }
 @media (max-width: 991px) {
@@ -44759,10 +44764,6 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-sheet-1 {
     min-height: 514px;
-  }
-
-  .u-footer .u-layout-wrap-1 {
-    margin-top: 29px;
   }
 
   .u-footer .u-layout-cell-1 {
@@ -44801,7 +44802,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-4 {
-    min-height: 431px;
+    min-height: 100px;
   }
 
   .u-footer .u-container-layout-4 {
@@ -44810,15 +44811,9 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-position-3 {
-    width: 142px;
-    margin-top: 5px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .u-footer .u-text-7 {
-    width: auto;
-    margin: 21px 44px 29px;
+    width: 162px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 767px) {
@@ -44857,22 +44852,13 @@ a.u-link.u-text-hover-grey-90:hover {
     min-height: 80px;
   }
 
-  .u-footer .u-layout-cell-4 {
-    min-height: 80px;
-  }
-
   .u-footer .u-container-layout-4 {
     padding-left: 9px;
     padding-right: 9px;
   }
 
-  .u-footer .u-position-3 {
-    width: 104px;
-  }
-
   .u-footer .u-text-7 {
-    margin-left: 0;
-    margin-right: 0;
+    width: 540px;
   }
 }
 @media (max-width: 575px) {
@@ -44882,10 +44868,6 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-sheet-1 {
     min-height: 950px;
-  }
-
-  .u-footer .u-layout-wrap-1 {
-    margin-top: 40px;
   }
 
   .u-footer .u-layout-cell-1 {
@@ -44913,27 +44895,167 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-position-2 {
     min-height: 167px;
-    margin-right: initial;
-    margin-left: initial;
-  }
-
-  .u-footer .u-layout-cell-4 {
-    min-height: 193px;
-  }
-
-  .u-footer .u-position-3 {
-    min-height: 142px;
-    margin-right: initial;
-    margin-left: initial;
-    width: auto;
   }
 
   .u-footer .u-text-7 {
-    margin-top: 13px;
-    margin-bottom: 44px;
+    width: 340px;
   }
 }
 
+ /*begin-variables custom-site-css*//* Styling Tombol Mengambang & Animasi */
+.wa-floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 99999;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse-wa 2s infinite; 
+}
+
+@keyframes pulse-wa {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.wa-floating-btn:hover {
+  background-color: #1da851;
+}
+
+/* Styling Container Pop-Up Form - Lebih Elegan */
+.wa-popup-container {
+  display: none; 
+  position: fixed;
+  bottom: 110px;
+  right: 30px;
+  width: 320px; /* Sedikit dilebarkan agar form lebih lega */
+  background-color: #ffffff;
+  border-radius: 15px; /* Sudut lebih melengkung */
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.15); /* Bayangan lebih modern */
+  z-index: 99999;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #eaeaea;
+}
+
+/* Styling Bagian Atas Pop-up - Desain Gradasi */
+.wa-popup-header {
+  background: linear-gradient(135deg, #075e54, #128c7e); /* Warna hijau WA yang elegan */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Menyusun ke atas */
+}
+
+/* Mengatur Teks Judul dan Deskripsi */
+.header-text-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text-group strong {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+
+.header-text-group span {
+  font-size: 12px;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.wa-close-btn {
+  font-size: 26px;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.wa-close-btn:hover {
+  opacity: 1;
+}
+
+/* Styling Bagian Dalam Form */
+.wa-popup-body {
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+/* Layout untuk Label dan Input */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: #555555; /* Warna teks label abu tua */
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* Styling Kolom Isian (Fix Masalah Teks Putih) */
+.wa-popup-body input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  background-color: #ffffff !important; /* Paksa background jadi putih */
+  color: #111111 !important; /* Paksa teks yang diketik jadi warna hitam pekat */
+  transition: all 0.3s ease;
+}
+
+/* Efek saat kolom sedang diisi */
+.wa-popup-body input:focus {
+  outline: none;
+  border-color: #25d366;
+  box-shadow: 0 0 5px rgba(37, 211, 102, 0.3);
+}
+
+.wa-popup-body input[type="number"]::-webkit-inner-spin-button, 
+.wa-popup-body input[type="number"]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+/* Styling Tombol Chat Sekarang */
+.wa-popup-body button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background-color: #25d366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+}
+
+.wa-popup-body button:hover {
+  background-color: #1da851;
+  transform: translateY(-2px); /* Efek tombol terangkat sedikit saat kursor diletakkan */
+  box-shadow: 0px 6px 15px rgba(37, 211, 102, 0.4);
+}/*end-variables custom-site-css*/
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
