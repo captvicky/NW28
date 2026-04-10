@@ -3355,6 +3355,25 @@
   padding: 20px;
 }
 
+.u-section-23 .u-accordion-link-14 {
+  font-weight: 700;
+  padding: 20px 30px;
+}
+
+.u-section-23 .u-icon-14 {
+  height: 20px;
+  width: 20px;
+  color: rgb(153, 153, 153);
+}
+
+.u-section-23 .u-accordion-pane-14 {
+  min-height: 150px;
+}
+
+.u-section-23 .u-container-layout-14 {
+  padding: 20px;
+}
+
 @media (max-width: 1199px) {
   .u-section-23 .u-accordion-1 {
     width: 940px;
@@ -3426,6 +3445,11 @@
   }
 
   .u-section-23 .u-container-layout-13 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-23 .u-container-layout-14 {
     padding-left: 10px;
     padding-right: 10px;
   }
