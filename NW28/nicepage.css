@@ -44551,11 +44551,9 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-nav-1 {
   font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: normal;
 }
 
-.u-header .u-nav-2 {
+.u-header .u-nav-3 {
   font-size: 1.25rem;
 }
 @media (max-width: 1199px) {
@@ -44568,6 +44566,10 @@ a.u-link.u-text-hover-grey-90:hover {
     width: auto;
     margin-top: -72px;
     margin-right: 3px;
+  }
+
+  .u-header .u-nav-1 {
+    font-size: 1.25rem;
   }
 }
 
