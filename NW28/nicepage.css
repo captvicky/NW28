@@ -44917,7 +44917,14 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-layout-cell-1 {
-    min-height: 304px;
+    min-height: 254px;
+  }
+
+  .u-footer .u-custom-html-1 {
+    min-height: 38px;
+    margin-top: -38px;
+    margin-right: 169px;
+    margin-left: 9px;
   }
 
   .u-footer .u-layout-cell-2 {
