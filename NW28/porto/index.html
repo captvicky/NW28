@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NW28 ID - Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* CSS RESET & GLOBAL STYLES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: #f3f4f6;
+        }
+
+        /* EMBED PDF STYLE */
+        .pdf-container iframe {
+            width: 100vw;
+            height: 100vh;
+            border: none;
+            display: block;
+        }
+
+        /* FLOATING BUTTON STYLE */
+        .floating-btn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25D366, #1da851);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 12px 25px rgba(37, 211, 102, 0.5);
+        }
+
+        .chat-icon {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        /* MODAL (POPUP FORM) STYLE */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            position: relative;
+            transform: translateY(20px);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-content {
+            transform: translateY(0);
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 24px;
+            color: #6b7280;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover {
+            color: #111827;
+        }
+
+        .modal-header h2 {
+            font-size: 24px;
+            color: #1f2937;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .modal-header p {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            color: #374151;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            outline: none;
+        }
+
+        .form-group input:focus {
+            border-color: #25D366;
+            box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.2);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #111827;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #374151;
+        }
+
+        .submit-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="pdf-container">
+        <iframe src="https://www.nw28.co.id/data/portofolio-nw28-id.pdf" title="Portofolio NW28 ID"></iframe>
+    </div>
+
+    <div class="floating-btn" id="openFormBtn">
+        <svg class="chat-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H5.17L4 17.17V4H20V16Z"/>
+            <path d="M7 9H17V11H7V9Z"/>
+            <path d="M7 13H14V15H7V13Z"/>
+        </svg>
+    </div>
+
+    <div class="modal-overlay" id="formModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeFormBtn">&times;</span>
+            
+            <div class="modal-header">
+                <h2>NW28 ID</h2>
+                <p>Silakan isi data berikut untuk terhubung dengan kami.</p>
+            </div>
+
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="kota">Kota Asal</label>
+                    <input type="text" id="kota" name="kota" placeholder="Contoh: Jakarta, Bandung..." required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="whatsapp">No. Telepon / WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="Contoh: 08123456789" required>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Hubungi Kami Sekarang</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('formModal');
+        const openBtn = document.getElementById('openFormBtn');
+        const closeBtn = document.getElementById('closeFormBtn');
+        const form = document.getElementById('contactForm');
+        const submitBtn = document.getElementById('submitBtn');
+
+        // URL Google Apps Script kamu
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz_L1DI0Nu2I579tdFcF5e1REoU5bbKoqHflzVOd2EhuApPocvKuFp0ut7ByMgcsF2p2w/exec';
+        
+        // Nomor WhatsApp tujuan
+        const waNumber = '6281312364679'; 
+
+        openBtn.addEventListener('click', () => {
+            modal.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        form.addEventListener('submit', e => {
+            e.preventDefault(); 
+            
+            submitBtn.innerHTML = "Memproses...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(form);
+            const namaInput = form.querySelector('#nama').value;
+            const kotaInput = form.querySelector('#kota').value;
+
+            // Mengirim data ke URL script lama kamu tanpa CORS issue
+            fetch(scriptURL, { method: 'POST', body: formData, mode: 'no-cors' })
+                .then(response => {
+                    // Pesan WA kustom
+                    const waMessage = `Halo NW28 ID, saya ${namaInput} dari ${kotaInput}. Saya tertarik dengan layanan Anda setelah melihat portofolio.`;
+                    const waURL = `https://api.whatsapp.com/send?phone=${waNumber}&text=${encodeURIComponent(waMessage)}`;
+                    
+                    form.reset();
+                    submitBtn.innerHTML = "Hubungi Kami Sekarang";
+                    submitBtn.disabled = false;
+                    modal.classList.remove('active');
+
+                    // Alihkan ke WA
+                    window.location.href = waURL; 
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    alert("Terjadi kesalahan saat mengirim data. Silakan coba lagi.");
+                    submitBtn.innerHTML = "Hubungi Kami Sekarang";
+                    submitBtn.disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>
