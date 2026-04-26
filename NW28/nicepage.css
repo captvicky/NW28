@@ -45696,13 +45696,13 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-footer .u-container-layout-3 {
-  padding: 4px 0;
+  padding: 0;
 }
 
 .u-footer .u-position-2 {
   height: auto;
   min-height: 254px;
-  margin: 25px 7px 0 30px;
+  margin: 29px 7px 0 30px;
 }
 
 .u-footer .u-btn-7 {
@@ -45718,7 +45718,7 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-custom-html-2 {
   min-height: 224px;
   height: auto;
-  margin: -254px -278px 0 97px;
+  margin: -193px -314px -15px 133px;
 }
 
 .u-footer .u-layout-cell-4 {
@@ -45805,7 +45805,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-custom-html-2 {
-    margin-top: -254px;
+    margin-top: -193px;
     margin-right: 0;
     margin-left: 0;
   }
