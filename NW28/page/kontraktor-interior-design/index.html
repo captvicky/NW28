@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" itemscope itemtype="https://schema.org/LocalBusiness">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,7 +63,7 @@
         "@graph": [
             {
                 "@type": "Organization",
-                "@id": "https://www.nw28.co.id/About-us.html",
+                "@id": "https://www.nw28.co.id/#organization",
                 "name": "NW28 ID - CV. NATAWIRA DWI ASHTA",
                 "url": "https://www.nw28.co.id/",
                 "logo": {
@@ -82,18 +82,16 @@
                 ],
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Jl. Gudang Utara NO.28. Samping Pom Bensin Militer",
+                    "streetAddress": "Jl. Gudang Utara No.28",
                     "addressLocality": "Bandung",
                     "addressRegion": "Jawa Barat",
-                    "postalCode": "40141",
+                    "postalCode": "40113",
                     "addressCountry": "ID"
                 },
                 "contactPoint": [
-                    { "@type": "ContactPoint", "telephone": "+62-811-222-7125", "contactType": "customer service", "areaServed": "ID", "availableLanguage": ["Indonesia", "English"] },
-                    { "@type": "ContactPoint", "telephone": "+62-813-1236-4679", "contactType": "WhatsApp", "areaServed": "ID", "availableLanguage": ["Indonesia"] }
+                    { "@type": "ContactPoint", "telephone": "+6281312364679", "contactType": "sales", "areaServed": "ID", "availableLanguage": ["Indonesian"] }
                 ],
-                "award": ["Sertifikasi ISO 9001:2015", "Penghargaan IKI Award 2023", "Green Building Certified"],
-                "knowsAbout": ["Desain Interior Minimalis","Material Alam Earth Tone","Smart Home Integration","Desain Berkelanjutan","3D VR Visualization","Jasa Arsitek","Renovasi Rumah","Konstruksi Bangunan","Turnkey Project"]
+                "knowsAbout": ["Desain Interior","Renovasi Rumah","Konstruksi Bangunan","Jasa Arsitek","Turnkey Project","Furniture Custom","Produksi Booth Event"]
             },
             {
                 "@type": "LocalBusiness",
@@ -108,28 +106,24 @@
                     { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00" }
                 ],
                 "paymentAccepted": "Cash, Transfer Bank, Credit Card",
-                "hasMap": "https://maps.app.goo.gl/xaypCwddXJdnLs3WA",
-                "telephone": "+62-22-2012345",
-                "email": "info@nw28.co.id",
+                "hasMap": "https://maps.google.com/maps?q=NW28+Jl.+Gudang+Utara+No.28+Bandung",
+                "telephone": "+6281312364679",
+                "email": "nw28.workhouse@gmail.com",
                 "areaServed": ["Bandung","Jakarta","Jabodetabek","Jawa Barat"],
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "Jl. Gudang Utara no 28",
+                    "streetAddress": "Jl. Gudang Utara No.28",
                     "addressLocality": "Bandung",
                     "addressRegion": "Jawa Barat",
-                    "postalCode": "40141",
+                    "postalCode": "40113",
                     "addressCountry": "ID"
                 },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -6.9162154,
+                    "longitude": 107.6231274
+                },
                 "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "bestRating": "5", "ratingCount": "68", "reviewCount": "68" }
-            },
-            {
-                "@type": "InteriorDesigner",
-                "@id": "https://www.nw28.co.id/Jasa-Renovasi-Interior.html",
-                "name": "NW28 ID - Interior Design",
-                "description": "Kontraktor Arsitek Interior spesialis desain elegan minimalis earth tone untuk hunian dan komersial di Bandung dan Jakarta.",
-                "areaServed": [{ "@type": "City", "name": "Bandung" }, { "@type": "City", "name": "Jakarta" }],
-                "serviceArea": { "@type": "GeoCircle", "geoMidpoint": { "@type": "GeoCoordinates", "latitude": -6.903444, "longitude": 107.573116 }, "geoRadius": "100000" },
-                "priceRange": "$$"
             },
             {
                 "@type": "WebSite",
@@ -142,12 +136,10 @@
             },
             {
                 "@type": "BreadcrumbList",
-                "@id": "https://www.nw28.co.id/#breadcrumb",
+                "@id": "https://www.nw28.co.id/page/kontraktor-interior-design/#breadcrumb",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "name": "Beranda", "item": "https://www.nw28.co.id/" },
-                    { "@type": "ListItem", "position": 2, "name": "Layanan", "item": "https://www.nw28.co.id/#services" },
-                    { "@type": "ListItem", "position": 3, "name": "Portfolio", "item": "https://www.nw28.co.id/#portfolio" },
-                    { "@type": "ListItem", "position": 4, "name": "Kontak", "item": "https://www.nw28.co.id/#contact" }
+                    { "@type": "ListItem", "position": 1, "name": "NW28 ID", "item": "https://www.nw28.co.id/" },
+                    { "@type": "ListItem", "position": 2, "name": "Kontraktor Interior Design", "item": "https://www.nw28.co.id/page/kontraktor-interior-design/" }
                 ]
             },
             {
@@ -172,12 +164,12 @@
                 "areaServed": ["Bandung","Jakarta"], "serviceType": "Konstruksi"
             },
             {
-                "@type": "ItemList", "@id": "https://www.nw28.co.id/#portfoliolist",
+                "@type": "ItemList", "@id": "https://www.nw28.co.id/page/kontraktor-interior-design/#portfoliolist",
                 "name": "Portfolio Proyek NW28 ID",
                 "itemListElement": [
-                    { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Desain Ruang Tamu Modern Earth Tone", "description": "Desain ruang tamu dengan palet warna tanah", "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=800" } },
-                    { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "Kamar Tidur Minimalis Terracotta", "description": "Kamar tidur dengan sentuhan terracotta", "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800" } },
-                    { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Dapur Modern Sage Green", "description": "Dapur dengan kabinet sage green", "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800" } }
+                    { "@type": "ListItem", "position": 1, "item": { "@type": "CreativeWork", "name": "Desain Interior Ruang Tamu Modern", "image": "https://www.nw28.co.id/images/kontraktorinteriorcafeandlounge.png" } },
+                    { "@type": "ListItem", "position": 2, "item": { "@type": "CreativeWork", "name": "Desain Interior Kamar Tidur Minimalis", "image": "https://www.nw28.co.id/images/jasakontraktorinterior.jpeg" } },
+                    { "@type": "ListItem", "position": 3, "item": { "@type": "CreativeWork", "name": "Desain Dapur Modern Premium", "image": "https://www.nw28.co.id/images/jasapembuatankitchensetbandung.png" } }
                 ]
             },
             {
@@ -188,24 +180,16 @@
                     { "@type": "Question", "name": "Apakah NW28 ID melayani jasa arsitek dan kontraktor di Jakarta?", "acceptedAnswer": { "@type": "Answer", "text": "Ya, NW28 ID melayani jasa arsitek dan kontraktor untuk wilayah Jakarta, Jabodetabek, dan Bandung. 500+ proyek telah kami selesaikan di kedua kota besar." } },
                     { "@type": "Question", "name": "Berapa lama waktu pengerjaan proyek interior dan renovasi rumah?", "acceptedAnswer": { "@type": "Answer", "text": "Estimasi: Apartemen 2 kamar 4-6 minggu, Renovasi rumah 3 kamar 8-12 minggu, Bangun rumah baru 4-8 bulan. Timeline detail di awal kontrak." } },
                     { "@type": "Question", "name": "Apa keunggulan desain earth tone untuk rumah di Bandung?", "acceptedAnswer": { "@type": "Answer", "text": "Desain earth tone memberikan kesan hangat, natural, dan timeless. Warna alam seperti coklat, beige, sage green, dan terracotta menciptakan suasana tenang dan elegan untuk iklim Bandung." } },
-                    { "@type": "Question", "name": "Bagaimana cara memulai konsultasi dengan NW28 ID?", "acceptedAnswer": { "@type": "Answer", "text": "Klik tombol Konsultasi Gratis di website ini, isi form popup WhatsApp, dan tim kami akan langsung merespon. Atau hubungi +62-812-3456-7890. Konsultasi awal GRATIS!" } }
+                    { "@type": "Question", "name": "Bagaimana cara memulai konsultasi dengan NW28 ID?", "acceptedAnswer": { "@type": "Answer", "text": "Klik tombol Konsultasi Gratis di website ini, isi form popup WhatsApp, dan tim kami akan langsung merespon. Atau hubungi +6281312364679. Konsultasi awal GRATIS!" } }
                 ]
             },
-            {
-                "@type": "Product", "@id": "https://www.nw28.co.id/#product-jasadesain",
-                "name": "Paket Jasa Kontraktor Arsitek Interior",
-                "description": "Paket lengkap jasa kontraktor arsitek interior untuk rumah tinggal, apartemen, dan komersial.",
-                "brand": { "@type": "Brand", "name": "NW28 ID" },
-                "offers": { "@type": "AggregateOffer", "priceCurrency": "IDR", "lowPrice": "5000000", "highPrice": "500000000", "offerCount": "500" },
-                "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "68" }
-            },
-            {
+                        {
                 "@type": "Review", "@id": "https://www.nw28.co.id/#review1",
                 "author": { "@type": "Person", "name": "Budi Santoso" },
                 "datePublished": "2024-03-15",
                 "reviewBody": "Hasil desain NW28 sangat memuaskan. Kontraktor arsitek interior yang profesional. Sentuhan earth tone membuat rumah hangat dan nyaman.",
                 "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "itemReviewed": { "@type": "LocalBusiness", "name": "NW28 ID - Kontraktor Arsitek Interior" }
+                "itemReviewed": { "@id": "https://www.nw28.co.id/#organization" }
             },
             {
                 "@type": "Review", "@id": "https://www.nw28.co.id/#review2",
@@ -213,7 +197,7 @@
                 "datePublished": "2024-06-20",
                 "reviewBody": "Tim arsitek dan kontraktornya sangat komunikatif, hasilnya sesuai dengan desain 3D. Highly recommended!",
                 "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "itemReviewed": { "@type": "LocalBusiness", "name": "NW28 ID - Kontraktor Arsitek Interior" }
+                "itemReviewed": { "@id": "https://www.nw28.co.id/#organization" }
             },
             {
                 "@type": "Review", "@id": "https://www.nw28.co.id/#review3",
@@ -221,7 +205,7 @@
                 "datePublished": "2024-09-10",
                 "reviewBody": "NW28 ID kontraktor arsitek interior profesional. Bangun rumah tepat waktu sesuai RAB. Desain interior premium!",
                 "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-                "itemReviewed": { "@type": "LocalBusiness", "name": "NW28 ID - Kontraktor Arsitek Interior" }
+                "itemReviewed": { "@id": "https://www.nw28.co.id/#organization" }
             },
             {
                 "@type": "HowTo",
@@ -234,39 +218,6 @@
                     { "@type": "HowToStep", "position": 4, "name": "Eksekusi Proyek", "text": "Tim kontraktor profesional kami mengerjakan proyek sesuai timeline yang disepakati. Quality control ketat di setiap tahap." },
                     { "@type": "HowToStep", "position": 5, "name": "Handover & After Sales", "text": "Serah terima proyek dan garansi layanan purna jual untuk kepuasan maksimal." }
                 ]
-            },
-            {
-                "@type": "VideoObject",
-                "@id": "https://www.nw28.co.id/#video-portfolio",
-                "name": "Portfolio Proyek Kontraktor Interior Design NW28 ID",
-                "description": "Video portofolio proyek desain interior dan renovasi rumah oleh NW28 ID, kontraktor arsitek interior Bandung Jakarta.",
-                "thumbnailUrl": "https://www.nw28.co.id/images/nw28LOGO.png",
-                "uploadDate": "2024-01-01",
-                "duration": "PT2M30S",
-                "contentUrl": "https://www.nw28.co.id/video/portfolio-nw28.mp4",
-                "embedUrl": "https://www.nw28.co.id/video/portfolio-nw28.mp4"
-            },
-            {
-                "@type": "WebSite",
-                "@id": "https://www.nw28.co.id/#website",
-                "url": "https://www.nw28.co.id/",
-                "name": "NW28 ID - Kontraktor Arsitek Interior Design Bandung Jakarta",
-                "description": "Kontraktor arsitek interior design spesialis bangun & renovasi rumah di Bandung dan Jakarta. 500+ proyek, gratis konsultasi.",
-                "inLanguage": "id-ID",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": {
-                        "@type": "EntryPoint",
-                        "urlTemplate": "https://www.nw28.co.id/search?q={search_term_string}"
-                    },
-                    "query-input": "required name=search_term_string"
-                }
-            },
-            {
-                "@type": "ImageObject",
-                "@id": "https://www.nw28.co.id/#hero-image",
-                "url": "https://www.nw28.co.id/images/kontraktorInteriordanExteriorterbaikdiBandungdanJakarta.webp",
-                "caption": "Kontraktor interior design profesional di Bandung dan Jakarta oleh NW28 ID"
             }
         ]
     }
@@ -1433,7 +1384,7 @@
     </main>
 
     <!-- ====== FOOTER ====== -->
-    <footer itemscope itemtype="https://schema.org/LocalBusiness">
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
