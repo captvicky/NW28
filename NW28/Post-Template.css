@@ -85,3 +85,11 @@
     margin-left: initial;
   }
 }
+
+/* H1 judul artikel — ukuran mengikuti gaya judul h2 sebelumnya (SEO: H1 tunggal) */
+h1.u-blog-control {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: Roboto, sans-serif;
+}
