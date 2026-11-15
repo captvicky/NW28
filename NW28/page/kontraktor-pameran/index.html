@@ -101,77 +101,79 @@
     </script>
     
     <!-- ===== SCHEMA MARKUP - ORGANIZATION (with geo coordinates) ==== -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.nw28.co.id/#organization",
+  "name": "CV. Natawira Dwi Ashta - NW28 ID",
+  "alternateName": "NW28 ID | Kontraktor Pameran",
+  "url": "https://www.nw28.co.id/",
+  "logo": "https://www.nw28.co.id/images/nw28LOGO.png",
+  "image": "https://www.nw28.co.id/images/NW28KontraktorPameran.webp",
+  "description": "Jasa pembuatan booth pameran terbaik oleh kontraktor pameran profesional. Spesialis booth exhibition custom di Jakarta dan Bandung. Layanan desain 3D, produksi, instalasi, dan pembongkaran booth. 500+ proyek, 10+ tahun pengalaman.",
+  "foundingDate": "2015",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 10,
+    "maxValue": 25
+  },
+  "areaServed": [
+    "Jakarta",
+    "Bandung",
+    "Indonesia"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jl. Gudang Utara No.28, Merdeka, Kec. Sumur Bandung",
+    "addressLocality": "Bandung",
+    "addressRegion": "Jawa Barat",
+    "postalCode": "40113",
+    "addressCountry": "ID"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -6.9175,
+    "longitude": 107.6107
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-813-123-64679",
+    "contactType": "customer service",
+    "email": "nw28.workhouse@gmail.com",
+    "availableLanguage": [
+      "Indonesian",
+      "English"
+    ]
+  },
+  "openingHoursSpecification": [
     {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "https://www.nw28.co.id/#organization",
-        "name": "CV. Natawira Dwi Ashta - NW28 ID",
-        "alternateName": "NW28 ID | Kontraktor Pameran",
-        "url": "https://www.nw28.co.id/",
-        "logo": "https://www.nw28.co.id/images/nw28LOGO.png",
-        "image": "https://www.nw28.co.id/images/NW28KontraktorPameran.webp",
-        "description": "Jasa pembuatan booth pameran terbaik oleh kontraktor pameran profesional. Spesialis booth exhibition custom di Jakarta dan Bandung. Layanan desain 3D, produksi, instalasi, dan pembongkaran booth. 500+ proyek, 10+ tahun pengalaman.",
-        "foundingDate": "2015",
-        "numberOfEmployees": {
-            "@type": "QuantitativeValue",
-            "minValue": 10,
-            "maxValue": 25
-        },
-        "areaServed": [
-            "Jakarta",
-            "Bandung",
-            "Indonesia"
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Jl. Gudang Utara No.28, Merdeka, Kec. Sumur Bandung",
-            "addressLocality": "Bandung",
-            "addressRegion": "Jawa Barat",
-            "postalCode": "40113",
-            "addressCountry": "ID"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -6.9175,
-            "longitude": 107.6107
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+62-813-123-64679",
-            "contactType": "customer service",
-            "email": "nw28.workhouse@gmail.com",
-            "availableLanguage": ["Indonesian", "English"]
-        },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-                "opens": "09:00",
-                "closes": "17:30"
-            },
-            {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "16:00"
-            }
-        ],
-        "sameAs": [
-            "https://www.instagram.com/nw28.id/",
-            "https://www.nw28.co.id/"
-        ],
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "bestRating": "5",
-            "ratingCount": "85",
-            "reviewCount": "85"
-        },
-        "award": "Kontraktor Pameran Terpercaya 500+ Proyek",
-        "priceRange": "Rp5.000.000 - Rp500.000.000"
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "16:00"
     }
-    </script>
+  ],
+  "sameAs": [
+    "https://www.instagram.com/nw28.id/",
+    "https://www.nw28.co.id/",
+    "https://www.instagram.com/nw28.id",
+    "https://maps.google.com/?q=NW28+ID+Jl.+Gudang+Utara+No.28+Bandung+40113"
+  ],
+  "award": "Kontraktor Pameran Terpercaya 500+ Proyek",
+  "priceRange": "Rp5.000.000 - Rp500.000.000"
+}</script>
     
     <!-- ===== SCHEMA MARKUP - SERVICE (KONTRAKTOR PAMERAN) with catalog ===== -->
     <script type="application/ld+json">
@@ -318,135 +320,93 @@
     </script>
     
     <!-- ===== SCHEMA MARKUP - FAQ (10 Questions) ===== -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://www.nw28.co.id/page/kontraktor-pameran/#faq",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "@id": "https://www.nw28.co.id/page/kontraktor-pameran/#faq",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Berapa lama waktu yang dibutuhkan untuk mengerjakan booth pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Waktu pengerjaan booth pameran bervariasi tergantung kompleksitas desain dan ukuran. Secara umum, proses dari konsultasi hingga booth siap dipasang membutuhkan waktu 2-4 minggu. Untuk proyek dengan timeline lebih singkat, kami dapat mendiskusikan kemungkinan percepatan."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah booth bisa digunakan kembali untuk pameran berikutnya?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ya, sebagian besar komponen booth kami dirancang dengan sistem Knock-Down (KD) yang dapat digunakan kembali. Kami menggunakan material berkualitas yang tahan untuk beberapa kali pemasangan dan menyediakan layanan penyimpanan serta modifikasi jika diperlukan."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Bagaimana sistem pembayaran untuk jasa kontraktor pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Pembayaran dilakukan secara bertahap sesuai progres pengerjaan. Umumnya dengan skema: DP untuk memulai produksi, pembayaran kedua saat produksi selesai, dan pelunasan setelah pemasangan booth. Detail pembayaran tercantum dalam kontrak kerja yang ditandatangani bersama."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah Anda mengerjakan booth untuk semua jenis pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kami mengerjakan booth untuk berbagai jenis pameran termasuk trade show, exhibition, conference, dan event khusus. Tim kami berpengalaman menangani booth berbagai ukuran mulai dari stan kecil hingga paviliun besar di Jakarta, Bandung, dan kota-kota lainnya."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apa saja layanan yang termasuk dalam jasa kontraktor pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Layanan kontraktor pameran kami meliputi: konsultasi desain booth, pengembangan konsep 3D, fabrikasi dan produksi booth custom, material berkualitas (multiplex, HPL, vinyl, besi hollow, LED lighting), pengurusan perizinan SIPE, transportasi, instalasi di venue, dukungan teknis selama pameran, dan pembongkaran setelah acara selesai."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Bagaimana cara memilih kontraktor pameran yang tepat?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Pilihlah kontraktor pameran yang memiliki portofolio jelas, testimoni klien, pengalaman di bidang booth exhibition, kemampuan desain custom, transparansi harga, dan komunikasi yang baik. NW28 ID memenuhi semua kriteria dengan 500+ proyek dan rating 4.8/5."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah Anda melayani pembuatan booth di luar Jakarta dan Bandung?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ya, kami melayani pembuatan booth pameran di seluruh Indonesia. Tim kami siap melakukan instalasi di venue manapun, termasuk Surabaya, Yogyakarta, Bali, Medan, Makassar, dan kota-kota lainnya."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Berapa kisaran harga untuk jasa pembuatan booth pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Harga pembuatan booth pameran sangat bervariasi tergantung ukuran, material, kompleksitas desain, dan fitur yang diminta. Kisaran harga mulai dari Rp 5.000.000 hingga Rp 500.000.000."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah Anda menyediakan jasa desain booth pameran saja tanpa produksi?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ya, kami menyediakan jasa desain booth pameran secara terpisah. Anda bisa menggunakan layanan desain kami untuk mendapatkan konsep dan gambar kerja booth, kemudian memproduksinya sendiri atau melalui vendor lain."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apa keunggulan jasa pembuatan booth exhibition Bandung melalui NW28?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Keunggulan jasa pembuatan booth exhibition Bandung melalui NW28 ID: workshop dan tim produksi berlokasi di Bandung sehingga biaya logistik lebih hemat, akses ke material berkualitas dengan harga kompetitif, tim desainer dan teknisi yang berpengalaman dengan berbagai venue pameran di Bandung. Kami adalah kontraktor pameran Bandung terpercaya dengan 500+ portofolio."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Bagaimana cara memilih jasa pembuatan booth pameran terbaik?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Memilih jasa pembuatan booth pameran terbaik: perhatikan portofolio proyek sebelumnya, pengalaman di industri, kemampuan desain custom (bukan template), transparansi harga, timeline pengerjaan yang jelas, dan review klien. NW28 ID memenuhi semua kriteria sebagai pembuatan booth pameran terbaik dengan rating 4.8/5 dari 85+ review dan 500+ proyek terselesaikan."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah Anda melayani jasa pembuatan booth event selain pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ya, selain booth pameran, kontraktor pameran NW28 ID juga melayani jasa pembuatan booth event untuk bazaar, festival, peluncuran produk, gathering corporate, pameran kampus, exhibition UMKM, dan event promosi. Layanan mencakup desain, produksi, instalasi, dan pembongkaran booth event secara profesional."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apa saja material yang digunakan untuk booth pameran custom?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kami menggunakan material berkualitas untuk jasa pembuatan booth pameran: multiplex finishing HPL, acrylic, besi hollow, kayu solid, vinyl lantai, LED lighting, neon sign, backdrop print UV, kain stretch, kaca tempered, dan material premium lainnya. Semua disesuaikan dengan budget, konsep desain, dan kebutuhan event Anda."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Apakah kontraktor pameran NW28 menyediakan jasa desain 3D booth?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ya, jasa desain booth pameran 3D adalah bagian integral dari layanan kami. Tim desainer akan membuat visualisasi 3D realistis dari booth Anda sebelum produksi dimulai, lengkap dengan revisi hingga Anda puas. Ini memastikan hasil akhir sesuai ekspektasi dan meminimalkan risiko kesalahan produksi."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Bagaimana cara memulai proses pemesanan jasa kontraktor pameran?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Proses dimulai dengan menghubungi tim NW28 ID melalui WhatsApp atau email. Kami akan menjadwalkan konsultasi gratis untuk mendiskusikan kebutuhan booth pameran Anda. Setelah brief disepakati, kami akan memberikan proposal dan quote harga untuk diproses lebih lanjut."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "Berapa lama waktu yang dibutuhkan untuk mengerjakan booth pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Waktu pengerjaan booth pameran bervariasi tergantung kompleksitas desain dan ukuran. Secara umum, proses dari konsultasi hingga booth siap dipasang membutuhkan waktu 2-4 minggu. Untuk proyek dengan timeline lebih singkat, kami dapat mendiskusikan kemungkinan percepatan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah booth bisa digunakan kembali untuk pameran berikutnya?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, sebagian besar komponen booth kami dirancang dengan sistem Knock-Down (KD) yang dapat digunakan kembali. Kami menggunakan material berkualitas yang tahan untuk beberapa kali pemasangan dan menyediakan layanan penyimpanan serta modifikasi jika diperlukan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana sistem pembayaran untuk jasa kontraktor pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pembayaran dilakukan secara bertahap sesuai progres pengerjaan. Umumnya dengan skema: DP untuk memulai produksi, pembayaran kedua saat produksi selesai, dan pelunasan setelah pemasangan booth. Detail pembayaran tercantum dalam kontrak kerja yang ditandatangani bersama."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah Anda mengerjakan booth untuk semua jenis pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Kami mengerjakan booth untuk berbagai jenis pameran termasuk trade show, exhibition, conference, dan event khusus. Tim kami berpengalaman menangani booth berbagai ukuran mulai dari stan kecil hingga paviliun besar di Jakarta, Bandung, dan kota-kota lainnya."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara memilih kontraktor pameran yang tepat?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Pilihlah kontraktor pameran yang memiliki portofolio jelas, testimoni klien, pengalaman di bidang booth exhibition, kemampuan desain custom, transparansi harga, dan komunikasi yang baik. NW28 ID memenuhi semua kriteria dengan 500+ proyek dan rating 4.8/5."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah Anda melayani pembuatan booth di luar Jakarta dan Bandung?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, kami melayani pembuatan booth pameran di seluruh Indonesia. Tim kami siap melakukan instalasi di venue manapun, termasuk Surabaya, Yogyakarta, Bali, Medan, Makassar, dan kota-kota lainnya."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apakah Anda menyediakan jasa desain booth pameran saja tanpa produksi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ya, kami menyediakan layanan desain booth pameran secara terpisah. Anda bisa menggunakan layanan desain kami untuk mendapatkan konsep dan gambar kerja booth, kemudian memproduksinya sendiri atau melalui vendor lain."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apa saja layanan yang termasuk dalam jasa kontraktor pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Layanan kontraktor pameran kami meliputi: konsultasi desain booth, pengembangan konsep 3D, fabrikasi dan produksi booth custom, material berkualitas (multiplex, HPL, vinyl, besi hollow, LED lighting), pengurusan perizinan SIPE, transportasi, instalasi di venue, dukungan teknis selama pameran, dan pembongkaran setelah acara selesai."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Berapa kisaran harga untuk jasa pembuatan booth pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Harga pembuatan booth pameran sangat bervariasi tergantung ukuran, material, kompleksitas desain, dan fitur yang diminta. Kisaran harga mulai dari Rp 5.000.000 hingga Rp 500.000.000. Kami akan memberikan penawaran harga yang transparan setelah mendiskusikan kebutuhan spesifik Anda."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bagaimana cara memulai proses pemesanan jasa kontraktor pameran?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Proses dimulai dengan menghubungi tim NW28 ID melalui WhatsApp atau email. Kami akan menjadwalkan konsultasi gratis untuk mendiskusikan kebutuhan booth pameran Anda. Setelah brief disepakati, kami akan memberikan proposal dan quote harga untuk diproses lebih lanjut."
+      }
     }
-    </script>
+  ]
+}</script>
     
     
     <!-- ===== SCHEMA MARKUP - REVIEWS ===== -->
