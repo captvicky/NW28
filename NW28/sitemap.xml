@@ -174,4 +174,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.nw28.co.id/Kebijakan-Privasi.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.nw28.co.id/Syarat-Ketentuan.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.nw28.co.id/Kontak.html</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>
